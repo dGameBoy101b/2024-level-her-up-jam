@@ -35,10 +35,10 @@ RectTransform:
   - {fileID: 3639488738326017461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.9}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 30}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &3855652152717440305
 MonoBehaviour:
@@ -83,6 +83,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 325340386077577364, guid: e54787bf80206de46a2df76991ad4913, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 325340386077577364, guid: e54787bf80206de46a2df76991ad4913, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -98,12 +102,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Money Counter
       objectReference: {fileID: 0}
+    - target: {fileID: 1830840939712634422, guid: e54787bf80206de46a2df76991ad4913, type: 3}
+      propertyPath: m_fontSize
+      value: 35.45
+      objectReference: {fileID: 0}
     - target: {fileID: 2232817240660854441, guid: e54787bf80206de46a2df76991ad4913, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2232817240660854441, guid: e54787bf80206de46a2df76991ad4913, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2232817240660854441, guid: e54787bf80206de46a2df76991ad4913, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2232817240660854441, guid: e54787bf80206de46a2df76991ad4913, type: 3}
@@ -305,6 +317,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4948763345487520112, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948763345487520112, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -320,12 +336,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Passion Counter
       objectReference: {fileID: 0}
+    - target: {fileID: 6432874687645069266, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
+      propertyPath: m_fontSize
+      value: 35.45
+      objectReference: {fileID: 0}
     - target: {fileID: 6832754633371989837, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6832754633371989837, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832754633371989837, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6832754633371989837, guid: 9bd78978f3b6c9c47bdb463181c7b124, type: 3}
@@ -371,6 +395,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3166881265817912957, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166881265817912957, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -382,12 +410,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3199806342735830754, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
+      propertyPath: m_fontSize
+      value: 35.45
+      objectReference: {fileID: 0}
     - target: {fileID: 3570331491816820800, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3570331491816820800, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570331491816820800, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3570331491816820800, guid: d1456276a065eef4eaf346a8cc8c052b, type: 3}
@@ -589,6 +625,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4981058685116640606, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981058685116640606, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -604,12 +644,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food Counter
       objectReference: {fileID: 0}
+    - target: {fileID: 6398459495301653500, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
+      propertyPath: m_fontSize
+      value: 35.45
+      objectReference: {fileID: 0}
     - target: {fileID: 6872244900520999779, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6872244900520999779, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872244900520999779, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6872244900520999779, guid: f90183e4a8fc7c94294e05f7fe33f283, type: 3}
