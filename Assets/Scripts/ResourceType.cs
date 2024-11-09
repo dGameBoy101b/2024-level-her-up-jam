@@ -1,6 +1,6 @@
 public enum ResourceType
 {
-	Energy,
+	Time,
 	Food,
 	Money,
 	Love
