@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(TMP_Text))]
-public class CardName : MonoBehaviour
+public class CardName : MonoBehaviour, IUpdateCardStats
 {
 	private TMP_Text _text;
 	public TMP_Text Text
@@ -16,15 +16,8 @@ public class CardName : MonoBehaviour
 		set => this._text = value;
 	}
 
-	public CardStats Stats;
-
-	public void UpdateText()
+	public void UpdateCardStats(CardStats stats)
 	{
-		this.Text.text = this.Stats.DisplayName;
-	}
-
-	private void Start()
-	{
-		this.UpdateText();
+		this.Text.text = stats.DisplayName;
 	}
 }
