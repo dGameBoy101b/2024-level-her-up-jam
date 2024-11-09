@@ -1,26 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class CardStack : MonoBehaviour, ICollection<CardStats>
+public class CardStack : MonoBehaviour, IList<CardStats>
 {
 	[SerializeField]
-	protected List<CardStats> _cards = new();
+	private List<CardStats> _cards = new();
 
-	public UnityEvent<int> OnCountChange = new();
+	private void UpdateCardCount()
+	{
+		foreach (var component in this.GetComponentsInChildren<IUpdateCardCount>())
+			component.UpdateCardCount(this.Count);
+	}
 
-	#region Collection
+	#region List
 	public void Add(CardStats item)
 	{
 		this._cards.Add(item);
-		this.OnCountChange.Invoke(this.Count);
+		this.UpdateCardCount();
 	}
 
 	public void Clear()
 	{
 		this._cards.Clear();
-		this.OnCountChange.Invoke(0);
+		this.UpdateCardCount();
 	}
 
 	public bool Contains(CardStats item)
@@ -36,7 +39,7 @@ public class CardStack : MonoBehaviour, ICollection<CardStats>
 	public bool Remove(CardStats item)
 	{
 		bool removed = this._cards.Remove(item);
-		this.OnCountChange.Invoke(this.Count);
+		this.UpdateCardCount();
 		return removed;
 	}
 
@@ -52,6 +55,29 @@ public class CardStack : MonoBehaviour, ICollection<CardStats>
 	IEnumerator IEnumerable.GetEnumerator()
 	{
 		return this.GetEnumerator();
+	}
+
+	public int IndexOf(CardStats item)
+	{
+		return this._cards.IndexOf(item);
+	}
+
+	public void Insert(int index, CardStats item)
+	{
+		this._cards.Insert(index, item);
+		this.UpdateCardCount();
+	}
+
+	public void RemoveAt(int index)
+	{
+		this._cards.RemoveAt(index);
+		this.UpdateCardCount();
+	}
+
+	public CardStats this[int index] 
+	{
+		get => this._cards[index];
+		set => this._cards[index] = value;
 	}
 	#endregion
 }
