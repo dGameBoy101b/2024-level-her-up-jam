@@ -26,11 +26,11 @@ public class CardResourceChange : MonoBehaviour, IUpdateCardStats
 	{
 		int value;
 		bool has_value = stats.Changes.TryGetValue(this.Type, out value);
-		bool is_active = !has_value || value == 0;
+		bool is_active = has_value && value != 0;
 		this.gameObject.SetActive(is_active);
 		if (!is_active)
 			return;
-		this.Text.text = value.ToString();
+		this.Text.text = value < 0 ? value.ToString() : $"+{value}";
 		this.Text.color = value < 0 ? this.NegativeColor : this.PositiveColor;
 	}
 }
