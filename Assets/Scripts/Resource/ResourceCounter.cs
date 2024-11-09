@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(TMP_Text))]
 public class ResourceCounter : MonoBehaviour
@@ -48,5 +49,15 @@ public class ResourceCounter : MonoBehaviour
 	{
 		this.Tracker.OnAmountChanged.RemoveListener(this.OnAmountChanged);
 		this.Tracker.OnThresholdChange.RemoveListener(this.OnThresholdChanged);
+	}
+
+	private void OnEnable()
+	{
+		this.AddListeners();
+	}
+
+	private void OnDisable()
+	{
+		this.RemoveListeners();
 	}
 }

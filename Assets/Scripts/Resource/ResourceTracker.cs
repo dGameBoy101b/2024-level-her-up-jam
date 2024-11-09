@@ -94,5 +94,15 @@ public class ResourceTracker : MonoBehaviour
 	{
 		this.SetToStartValues();
 	}
+
+	private void OnEnable()
+	{
+		this.Register();
+	}
+
+	private void OnDisable()
+	{
+		this.Unregister();
+	}
 	#endregion
 }
