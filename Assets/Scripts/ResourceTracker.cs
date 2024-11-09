@@ -70,7 +70,7 @@ public class ResourceTracker : MonoBehaviour
 	}
 
 	#region Spending
-	public static bool CanAfford(Dictionary<ResourceType, int> costs)
+	public static bool CanAfford(IReadOnlyDictionary<ResourceType, int> costs)
 	{
 		foreach (var item in costs)
 		{
@@ -80,7 +80,7 @@ public class ResourceTracker : MonoBehaviour
 		return true;
 	}
 
-	public static void Change(Dictionary<ResourceType, int> changes)
+	public static void Change(IReadOnlyDictionary<ResourceType, int> changes)
 	{
 		foreach (var item in changes)
 		{
