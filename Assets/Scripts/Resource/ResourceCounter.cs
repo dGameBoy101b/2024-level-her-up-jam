@@ -7,7 +7,7 @@ public class ResourceCounter : MonoBehaviour
 {
 	public ResourceType Type;
 
-	public ResourceTracker Tracker => ResourceTracker.Instances[this.Type];
+	public ResourceTracker Tracker => ResourceTracker.Instances.ContainsKey(this.Type) ? ResourceTracker.Instances[this.Type] : null;
 
 	private TMP_Text _text;
 	public TMP_Text Text
