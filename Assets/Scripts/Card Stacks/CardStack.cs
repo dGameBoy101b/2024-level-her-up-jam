@@ -80,4 +80,9 @@ public class CardStack : MonoBehaviour, IList<CardStats>
 		set => this._cards[index] = value;
 	}
 	#endregion
+
+	private void Start()
+	{
+		this.UpdateCardCount();
+	}
 }
