@@ -47,6 +47,11 @@ public class ResourceCounter : MonoBehaviour
 
 	public void RemoveListeners()
 	{
+		if (this.Tracker == null)
+		{
+			Debug.LogWarning("No resource tracker to remove listeners from", this);
+			return;
+		}
 		this.Tracker.OnAmountChanged.RemoveListener(this.OnAmountChanged);
 		this.Tracker.OnThresholdChange.RemoveListener(this.OnThresholdChanged);
 	}
