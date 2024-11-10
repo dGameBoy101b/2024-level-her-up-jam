@@ -54,6 +54,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2872332193751853753}
   - component: {fileID: 1475324839905184801}
+  - component: {fileID: 8459125915203245124}
+  - component: {fileID: 8745986403317505771}
   m_Layer: 0
   m_Name: Money
   m_TagString: Untagged
@@ -97,6 +99,33 @@ MonoBehaviour:
   OnThresholdChange:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8459125915203245124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972077532280021644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f95ac9441b90d49bb45faa6a8bd626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8745986403317505771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972077532280021644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5fdbe4fbcc06d4c812e888092cb77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFail:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5860132308886474104
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +136,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4669412416616489}
   - component: {fileID: 541645798521822846}
+  - component: {fileID: 4516860195311290105}
+  - component: {fileID: 2838630267535937376}
   m_Layer: 0
   m_Name: Passion
   m_TagString: Untagged
@@ -150,6 +181,33 @@ MonoBehaviour:
   OnThresholdChange:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4516860195311290105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5860132308886474104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f95ac9441b90d49bb45faa6a8bd626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2838630267535937376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5860132308886474104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5fdbe4fbcc06d4c812e888092cb77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFail:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6622706181823171592
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,6 +218,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1883788252992728395}
   - component: {fileID: 7852526218231168422}
+  - component: {fileID: 2046591304493886586}
+  - component: {fileID: 486847866739380364}
   m_Layer: 0
   m_Name: Food
   m_TagString: Untagged
@@ -201,6 +261,33 @@ MonoBehaviour:
       m_Calls: []
   StartingThreshold: 10
   OnThresholdChange:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2046591304493886586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6622706181823171592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f95ac9441b90d49bb45faa6a8bd626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &486847866739380364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6622706181823171592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5fdbe4fbcc06d4c812e888092cb77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFail:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &7585823477400839795
@@ -249,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255775161679849899}
   - component: {fileID: 3622131470303828835}
+  - component: {fileID: 1295789963823426018}
   m_Layer: 0
   m_Name: Time
   m_TagString: Untagged
@@ -292,3 +380,15 @@ MonoBehaviour:
   OnThresholdChange:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1295789963823426018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7970858153331422940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989b71272db87e9478b452f453d78427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
