@@ -16,6 +16,7 @@ public class Discard : MonoBehaviour
 		}
 	}
 
+	#region Reshuffle
 	public UnityEvent<IEnumerable<CardStats>> OnReshuffle = new();
 
 	public void Reshuffle()
@@ -24,4 +25,13 @@ public class Discard : MonoBehaviour
 		this.Stack.Clear();
 		this.OnReshuffle.Invoke(cards);
 	}
+	#endregion
+
+	#region Discard
+	public void DiscardCards(IEnumerable<CardStats> cards)
+	{
+		foreach (var card in cards)
+			this.Stack.Add(card);
+	}
+	#endregion
 }

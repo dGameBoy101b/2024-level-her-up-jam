@@ -16,6 +16,7 @@ public class Deck : MonoBehaviour
 		}
 	}
 
+	#region Reshuffle
 	public UnityEvent OnRequestReshuffle = new();
 
 	public void Reshuffle(IEnumerable<CardStats> cards)
@@ -24,8 +25,12 @@ public class Deck : MonoBehaviour
 			this.Stack.Add(card);
 		Debug.Log("Reshuffled", this);
 	}
+	#endregion
 
-	public CardStats DrawCard()
+	#region Draw
+	public UnityEvent<CardStats> OnDraw = new();
+
+	public void DrawCard()
 	{
 		if (this.Stack.Count < 1)
 			this.OnRequestReshuffle.Invoke();
@@ -33,6 +38,7 @@ public class Deck : MonoBehaviour
 		var card = this.Stack[index];
 		this.Stack.RemoveAt(index);
 		Debug.Log($"Drew card {index}: {card.DisplayName}", this);
-		return card;
+		this.OnDraw.Invoke(card);
 	}
+	#endregion
 }
