@@ -95,7 +95,7 @@ MonoBehaviour:
   OnAmountChanged:
     m_PersistentCalls:
       m_Calls: []
-  StartingThreshold: 50
+  StartingThreshold: 20
   OnThresholdChange:
     m_PersistentCalls:
       m_Calls: []
