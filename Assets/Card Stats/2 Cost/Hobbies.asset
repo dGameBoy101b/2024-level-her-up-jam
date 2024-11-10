@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hobbies
   m_EditorClassIdentifier: 
   DisplayName: Hobbies
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 7ee8ed43b626b1248835ae7cffd9b733, type: 3}
   ChangeList:
   - Type: 0
     Change: -2

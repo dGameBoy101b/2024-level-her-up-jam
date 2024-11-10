@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Work
   m_EditorClassIdentifier: 
   DisplayName: Work
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 6e8f8a398189db1448163ade28c02635, type: 3}
   ChangeList:
   - Type: 0
     Change: -2

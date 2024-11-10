@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Exercise
   m_EditorClassIdentifier: 
   DisplayName: Exercise
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: e20ed07d012babc499d2ff3a76d53169, type: 3}
   ChangeList:
   - Type: 0
     Change: -1
