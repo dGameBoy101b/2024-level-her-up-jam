@@ -63,6 +63,11 @@ public class Hand : MonoBehaviour, IStartTurn, IEndTurn
 	{
 		var card_stats = this.transform.GetChild(index).GetComponentInChildren<Card>().Stats;
 		Debug.Log($"Playing card {index}: {card_stats.DisplayName}", this);
+		if (!card_stats.CanAfford())
+		{
+			Debug.LogWarning("Cannot afford");
+			return;
+		}
 		card_stats.ApplyChanges();
 		this.Discard(index);
 	}
