@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6e0d85433810f5459f6e5d4ebe4d115, type: 3}
-  m_Name: Test Card Stats
+  m_Name: Relax
   m_EditorClassIdentifier: 
-  DisplayName: Test
-  Image: {fileID: 21300000, guid: b6e5c84a7797ff94a90ef95cf1e46b94, type: 3}
+  DisplayName: Relax
+  Image: {fileID: 0}
   ChangeList:
   - Type: 0
     Change: -1
-  - Type: 1
-    Change: 5
   - Type: 3
-    Change: -2
+    Change: 5
