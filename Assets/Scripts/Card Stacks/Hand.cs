@@ -61,7 +61,7 @@ public class Hand : MonoBehaviour, IStartTurn, IEndTurn
 	#region Playing
 	public void Play(int index)
 	{
-		var card_stats = this.transform.GetChild(index).GetComponent<Card>().Stats;
+		var card_stats = this.transform.GetChild(index).GetComponentInChildren<Card>().Stats;
 		Debug.Log($"Playing card {index}: {card_stats.DisplayName}", this);
 		card_stats.ApplyChanges();
 		this.Discard(index);
