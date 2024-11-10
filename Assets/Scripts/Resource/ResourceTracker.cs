@@ -70,11 +70,16 @@ public class ResourceTracker : MonoBehaviour
 	}
 
 	#region Spending
+	public bool CanAfford(int cost)
+	{
+		return this.Amount >= cost;
+	}
+
 	public static bool CanAfford(IReadOnlyDictionary<ResourceType, int> costs)
 	{
 		foreach (var item in costs)
 		{
-			if (Instances[item.Key].Amount < item.Value)
+			if (!Instances[item.Key].CanAfford(item.Value))
 				return false;
 		}
 		return true;
