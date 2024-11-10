@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2771408226602271070, guid: a6740b977eaa2ac46bcfc7c4bba96fe5, type: 3}
+      propertyPath: m_AspectMode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4033192620964420610, guid: a6740b977eaa2ac46bcfc7c4bba96fe5, type: 3}
       propertyPath: m_Name
       value: Deck
