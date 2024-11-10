@@ -61,11 +61,13 @@ public class TurnTracker : MonoBehaviour
 		get => this._count; 
 		set
 		{
-			foreach (var end in this.EndTurnListeners)
-				end.TurnEnd(this.Count);
+			if (this.Count > 0)
+				foreach (var end in this.EndTurnListeners)
+					end.TurnEnd(this.Count);
 			this._count = value;
-			foreach (var start in this.StartTurnListeners)
-				start.TurnStart(this.Count);
+			if (this.Count > 0)
+				foreach (var start in this.StartTurnListeners)
+					start.TurnStart(this.Count);
 		}
 	}
 
@@ -89,6 +91,11 @@ public class TurnTracker : MonoBehaviour
 	private void OnDisable()
 	{
 		this.UnregisterInstance();
+	}
+
+	private void Start()
+	{
+		this.Count = 1;
 	}
 	#endregion
 }
