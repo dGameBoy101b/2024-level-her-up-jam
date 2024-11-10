@@ -898,6 +898,14 @@ PrefabInstance:
       value: Hand
       objectReference: {fileID: 0}
     - target: {fileID: 7388622178018045168, guid: 2aa70c63b43dd944fb6ae3ce56afdafb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388622178018045168, guid: 2aa70c63b43dd944fb6ae3ce56afdafb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388622178018045168, guid: 2aa70c63b43dd944fb6ae3ce56afdafb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1251,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1313460117922416451, guid: 8cfbef39f2bff8440b1a631eda2e480b, type: 3}
       propertyPath: m_fontSize
-      value: 45.9
+      value: 53.25
       objectReference: {fileID: 0}
     - target: {fileID: 1774607629476960245, guid: 8cfbef39f2bff8440b1a631eda2e480b, type: 3}
       propertyPath: m_AnchorMax.y
