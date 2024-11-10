@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 2
-  StartingAmount: 0
+  StartingAmount: 100
   OnAmountChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 1
-  StartingAmount: 0
+  StartingAmount: 20
   OnAmountChanged:
     m_PersistentCalls:
       m_Calls: []
