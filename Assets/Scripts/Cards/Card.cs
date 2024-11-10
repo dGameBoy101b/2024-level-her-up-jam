@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class Card : MonoBehaviour, IUpdateCardStats
+[RequireComponent(typeof(Canvas))]
+public class Card : MonoBehaviour, IUpdateCardStats, IUpdateSortOrder
 {
 	#region Stats
 	public CardStats Stats;
@@ -33,6 +34,29 @@ public class Card : MonoBehaviour, IUpdateCardStats
 	{
 		var hand = this.GetComponentInParent<Hand>();
 		hand.Play(this.HandIndex);
+	}
+	#endregion
+
+	#region Sort Order
+	private Canvas _canvas;
+	public Canvas Canvas
+	{
+		get
+		{
+			if (this._canvas == null)
+				this._canvas = this.GetComponent<Canvas>();
+			return this._canvas;
+		}
+	}
+
+	public void UpdateSortOrder(int order)
+	{
+		this.Canvas.sortingOrder = order;
+	}
+
+	public void RecalculateSortOrders()
+	{
+		this.GetComponentInParent<Hand>().SetSortOrders();
 	}
 	#endregion
 

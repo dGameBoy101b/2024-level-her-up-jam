@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(CardStack))]
 public class Hand : MonoBehaviour, IStartTurn, IEndTurn
@@ -15,6 +17,33 @@ public class Hand : MonoBehaviour, IStartTurn, IEndTurn
 			return this._stack;
 		}
 	}
+
+	#region Sort Order
+	private int GetIndex(Transform child)
+	{
+		for (int index = 0; index < this.transform.childCount; index++)
+			if (child.IsChildOf(this.transform.GetChild(index)))
+				return index;
+		return -1;
+	}
+
+	public void SetSortOrders()
+	{
+		var selected = EventSystem.current.currentSelectedGameObject;
+		if (!selected.transform.IsChildOf(this.transform))
+			return;
+		int selected_index = this.GetIndex(selected.transform);
+		int max_sort = Math.Max(selected_index, this.transform.childCount - selected_index);
+		for (int index = 0; index < this.transform.childCount; index++)
+		{
+			var child = this.transform.GetChild(index);
+			int sort_order = max_sort - Math.Abs(selected_index - index);
+			foreach (var component in child.GetComponentsInChildren<IUpdateSortOrder>())
+				component.UpdateSortOrder(sort_order);
+		}
+		Debug.Log("set sort orders",this);
+	}
+	#endregion
 
 	#region Drawing
 	public Card CardPrefab;
