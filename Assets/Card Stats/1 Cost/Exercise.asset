@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e0d85433810f5459f6e5d4ebe4d115, type: 3}
   m_Name: Exercise
   m_EditorClassIdentifier: 
-  DisplayName: 
+  DisplayName: Exercise
   Image: {fileID: 0}
-  ChangeList: []
+  ChangeList:
+  - Type: 0
+    Change: -1
+  - Type: 3
+    Change: 5
+  - Type: 1
+    Change: -10

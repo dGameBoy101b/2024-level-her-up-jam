@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e0d85433810f5459f6e5d4ebe4d115, type: 3}
   m_Name: Odd Jobs
   m_EditorClassIdentifier: 
-  DisplayName: 
+  DisplayName: Odd Jobs
   Image: {fileID: 0}
-  ChangeList: []
+  ChangeList:
+  - Type: 0
+    Change: -1
+  - Type: 2
+    Change: 20
